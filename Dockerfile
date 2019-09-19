@@ -4,4 +4,4 @@ USER jovyan
 RUN pip install --upgrade pip 
 RUN jupyter labextension install jupyterlab-jupytext && \
     jupyter labextension enable jupyterlab-jupytext 
-
+RUN pip install jupytext --upgrade 
