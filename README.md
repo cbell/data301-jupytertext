@@ -1,1 +1,1 @@
-Docker image based off of data301-notebook, which uses older Tensorflow notebook. Minor change includes addition of jupytext extention. 
+Docker image based off of Tensorflow notebook. Minor change includes addition of jupytext extention. Docker builds previous to 4.0 are using older calpolydatascience/data301 notebook as base. Updated to standard jupyter/tensorflow-notebook for security and application updates. 
