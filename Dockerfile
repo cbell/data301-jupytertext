@@ -7,5 +7,19 @@ USER jovyan
 RUN pip install --upgrade pip 
 RUN jupyter labextension install jupyterlab-jupytext && \
     jupyter labextension enable jupyterlab-jupytext 
-RUN pip install jupytext --upgrade && \
-    pip install auto-sklearn
+RUN conda install --quiet --yes \
+    'basemap' \
+    'blaze' \
+    'odo' \
+    'altair'\
+    'vega_datasets' \
+    'vega3' \
+    'pymc3' \
+    'brewer2mpl' \
+    'lxml' \
+    'plotly' \
+    'scikit-image' && \
+    pip install ipythonblocks && \
+    pip install vdom 
+RUN pip install auto-sklearn && \
+    pip install jupytext --upgrade 
